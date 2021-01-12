@@ -11,6 +11,10 @@ This is designed to be used with the Atomic Simulation Environment (ASE). In com
 		                          Molecular Physicls, 1098, 14 (2010)  
 Additionally, this module can also be used to add a finite wall potential in single direction.
 
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 ## Usage
 
 ## Testing
