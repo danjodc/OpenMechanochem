@@ -8,7 +8,8 @@ This is designed to be used with the *Atomic Simulation Environment* (ASE). In c
 * **External Force Explicitly Included** (EFEI) : Angew. Chem. Int. Ed., 48, 4190 (2009)
 		                          J. Am. Chem. Soc.132, 10609-10614 (2010)
 * **Enforced Geometry Optimization** (EGO) :   Molecular Physics,Vol 107, 22, (2009)
-		                          Molecular Physicls, 1098, 14 (2010)  
+		                          Molecular Physics, 1098, 14 (2010)  
+					  
 Additionally, this module can also be used to add a finite wall potential in single direction.
 
 
