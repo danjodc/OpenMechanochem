@@ -9,7 +9,7 @@ This is designed to be used with the *Atomic Simulation Environment* (ASE). In c
 		                          J. Am. Chem. Soc.132, 10609-10614 (2010)
 * **Enforced Geometry Optimization** (EGO) :   Molecular Physics,Vol 107, 22, (2009)
 		                          Molecular Physics, 1098, 14 (2010)  
-*Disclaimer: The author of this repository is not affiliated to the proponents of formalism above. Code development and testing was done independently*	
+<sub><sup>*Disclaimer: The author of this repository is not affiliated to the proponents of formalism above. Code development and testing was done independently*<sub><sup>	
 
 Additionally, this module can also be used to add a **finite wall potential in single direction**.
 
