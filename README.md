@@ -15,7 +15,7 @@ Additionally, this module can also be used to add a **finite wall potential in s
 
 ## Usage and Citation
 
-## Testing
+## Tutorial
 
 ## Contributing and Function Requests
 
