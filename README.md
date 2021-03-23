@@ -15,6 +15,7 @@ Additionally, this module can also be used to add a **finite wall potential in s
 
 ## Usage and Citation
 
+```
 @misc{Charles2013,
   author = {De Chavez, Danjo.},
   title = {Mechanochem},
@@ -23,6 +24,7 @@ Additionally, this module can also be used to add a **finite wall potential in s
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/danjodc/mechanochem}},
 }
+```
 
 ## Tutorial
 
