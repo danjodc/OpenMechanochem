@@ -15,6 +15,15 @@ Additionally, this module can also be used to add a **finite wall potential in s
 
 ## Usage and Citation
 
+@misc{Charles2013,
+  author = {De Chavez, Danjo.},
+  title = {Mechanochem},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/danjodc/mechanochem}},
+}
+
 ## Tutorial
 
 ## Contributing and Function Requests
