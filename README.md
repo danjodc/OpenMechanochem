@@ -68,6 +68,7 @@ For example, a system described below where H0 and H1 are hydrogen atoms pulled 
       A <---  0 ------- 1  --->   B
 ```
 
+In the case of H2 xyz given as 
 ```
 --> hydrogen.xyz
 2
@@ -76,13 +77,15 @@ Hydrogen
  H                 0.000  0.000  1.000
 
 ```
-
+The pulling points and applied points could be given as
 ```
 PullPoints = [[0.000,  0.000, -1.000],
               [0.000,  0.000,  2.000]]
 
 AppPoints  = [0,1]
 ```
+Care should be given that the position in pp and ap list corresponds with each other.  
+That is first list in pp list is the direction where atom with index as the first element of ap list is pulled to.  
 
 The magnitude of the applied force can be controlled using the pullforce key. 
 Note that the force provided should be in atomic units and the pullforce is divided in the two force vectors equally.
@@ -97,8 +100,16 @@ Using this method, the pulling coordinate can be defined using only the applied 
 ```
 
 ```
-	     0 <-------> 1  
+	     H0 <-------> H1  
 ```
+
+The ap list is same as the case above, which is
+```
+AppPoints  = [0,1]
+```
+
+Using EFEI formalism, the pull force is devided equally to the two atoms given by the ap list.
+
 ## Function Requests
 
 For function request related to mechanochemistry simulations and force analysis tools please contact author.
