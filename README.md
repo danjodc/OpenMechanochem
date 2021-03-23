@@ -55,16 +55,46 @@ As stated earlier the Mechanochem classes inherits from Atoms object and accepts
 
 ### FMPES
 
-Using FMPES, the cartesian coordinates each atoms 
+Using FMPES, the required parameters are pulling points, applied points and applied forces 
+This can be done by the keywords pp, ap, and pullforce respectively.
+
+```
+  pull.set_params(method='FMPES', pp=PullPoints, ap=AppPoints, pullforce = force)
+```
+In FMPES, the relative cartesian coordinates of pulling points and applied points are of utmost importance.
+For example, a system described below where H0 and H1 are hydrogen atoms pulled towards points A and B respectively,
 
 ```
       A <---  0 ------- 1  --->   B
 ```
 
+```
+--> hydrogen.xyz
+2
+Hydrogen
+ H                 0.000  0.000  0.000  
+ H                 0.000  0.000  1.000
+
+```
+
+```
+PullPoints = [[0.000,  0.000, -1.000],
+              [0.000,  0.000,  2.000]]
+
+AppPoints  = [0,1]
+```
+
+The magnitude of the applied force can be controlled using the pullforce key. 
+Note that the force provided should be in atomic units and the pullforce is divided in the two force vectors equally.
+
 ### EFEI
 
 In comparison to FMPES, the EFEI pulls along the internal molecular coordinates.
-Using this method, the pulling coordinate can be defined using only the ap
+Using this method, the pulling coordinate can be defined using only the applied points and pullforce.
+
+```
+  pull.set_params(method='EFEI', ap=AppPoints, pullforce = force)
+```
 
 ```
 	     0 <-------> 1  
