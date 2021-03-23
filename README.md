@@ -7,8 +7,7 @@ This is designed to be used with the *Atomic Simulation Environment* (ASE). Toge
 * **Force Modified Potential Energy Surface** (FMPES) :<br/>
  	J. Am. Chem. Soc., 131, 18, 6377–6379 (2009) 
 * **External Force Explicitly Included** (EFEI) :<br/>
- 	<pre><code>foo→baz→→bim
-</code></pre>Angew. Chem. Int. Ed., 48, 4190 (2009)<br/>
+	Angew. Chem. Int. Ed., 48, 4190 (2009)<br/>
  	J. Am. Chem. Soc.132, 10609-10614 (2010)
 * **Enforced Geometry Optimization** (EGO) :<br/>
  	Molecular Physics,Vol 107, 22, (2009)<br/>
