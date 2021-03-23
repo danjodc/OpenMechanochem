@@ -41,7 +41,16 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 
 In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
 
-# FMPES
+The mechanochem classes LinearPull and WallPot inherits from the ASE atoms object and hence an atoms instance is required.
+For an instance named as mol, this can easily be done as
+
+```
+import mechanochem as mc
+
+pull = mc.LinearPull(mol)
+```
+
+### FMPES
 
 Using FMPES, the cartesian coordinates each atoms 
 
@@ -49,7 +58,7 @@ Using FMPES, the cartesian coordinates each atoms
       A <---  0 ------- 1  --->   B
 ```
 
-# EFEI
+### EFEI
 
 In comparison to FMPES, the EFEI pulls along the internal molecular coordinates.
 Using this method, the pulling coordinate can be defined using only the ap
