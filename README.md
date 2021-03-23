@@ -1,7 +1,7 @@
 # Mechanochemistry
 
 ## Introduction
-Mechanochemistry module includes functions that can be used to simulate mechanochemical phenomena via the addition of external forces.Cancel Changes
+Mechanochemistry module includes functions that can be used to simulate mechanochemical phenomena via the addition of external forces.
 This is designed to be used with the *Atomic Simulation Environment* (ASE). Together with ASE, this module can be combined with various quantum mechanical calculators for geometry optimizations and nudged elastic band calculations to sample the effect of mechanical forces to the potential energy hypersurface. Currently, this module can execute:
 
 * **Force Modified Potential Energy Surface** (FMPES) :<br/>
@@ -24,7 +24,7 @@ De Chavez, D., Mechanochem, (2021), GitHub repository,
 	https://github.com/danjodc/Mechnochem
 ```
 
-or similary depending on your citation style. Alternatively, the BibTex library can be appended with
+or similarly depending on your citation style. For LaTex users, the BibTex library can be appended with
 
 ```
 @misc{DeChavez2021,
@@ -42,7 +42,7 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 ### LinearPull Class
 In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
 
-The mechanochem classes LinearPull and WallPot inherits from the ASE atoms object and hence an atoms instance is required.  
+The mechanochem classes LinearPull and WallPot inherit from the ASE atoms object and hence an Atoms instance is required.  
 For an instance named mol, this can easily be done as
 
 ```
@@ -57,19 +57,19 @@ As stated earlier the Mechanochem classes inherits from Atoms object and accepts
 #### FMPES
 
 Using FMPES, the required parameters are pulling points, applied points and applied forces 
-This can be done by the keywords pp, ap, and pullforce respectively.
+This can be done by using the keywords pp, ap, and pullforce respectively.
 
 ```
   pull.set_params(method='FMPES', pp=PullPoints, ap=AppPoints, pullforce = force)
 ```
 In FMPES, the relative cartesian coordinates of pulling points and applied points are of utmost importance.
-For example, a system described below where H0 and H1 are hydrogen atoms pulled towards points A and B respectively,
+For example, a system described below where H0 and H1 are hydrogen atoms pulled towards points A and B respectively, 
 
 ```
       A <---  0 ------- 1  --->   B
 ```
 
-In the case of H2 xyz given as 
+with H2 xyz given as 
 ```
 --> hydrogen.xyz
 2
@@ -86,7 +86,7 @@ PullPoints = [[0.000,  0.000, -1.000],
 AppPoints  = [0,1]
 ```
 Care should be given that the position in pp and ap list corresponds with each other.  
-That is first list in pp list is the direction where atom with index as the first element of ap list is pulled to.  
+That is, the first list in pp list is the direction where atom with index as the first element of ap list is pulled to.  
 
 The magnitude of the applied force can be controlled using the pullforce key. 
 Note that the force provided should be in atomic units and the pullforce is divided in the two force vectors equally.
