@@ -108,8 +108,21 @@ The ap list is same as the case above, which is
 AppPoints  = [0,1]
 ```
 
-Using EFEI formalism, the pull force is devided equally to the two atoms given by the ap list.
+Using EFEI formalism, the pull force is divided equally to the two atoms given by the ap list.
 
+### WallPot Class
+
+Similar to LinearPull class, the wallpot inherits from the atoms class.
+Hence, a prior instance of atoms should be provided.
+
+```
+mol = mc.WallPotential(slab)
+```
+The WallPot class takes the parameters method, plane, height, and wallforce.
+
+```
+mol.set_params(method='linear', plane=atomplane , height=10, wallforce=force)
+```
 ## Function Requests
 
 For function request related to mechanochemistry simulations and force analysis tools please contact author.
