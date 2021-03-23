@@ -41,4 +41,4 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 
 ## Function Requests
 
-For function request please contact author.
+For function request related to mechanochemistry simulations and force analysis tools please contact author.
