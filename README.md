@@ -16,7 +16,7 @@ This is designed to be used with the *Atomic Simulation Environment* (ASE). Toge
 
 Additionally, this module can also be used to add a **finite wall potential in single direction**. Current implementations includes four different types of potential, (1) linear, (2) inverse, (3) lennard-jones, and (4) $1/r^6$ potentials.
 
-## Usage and Citation
+##  Citations
 
 Citation can be done as
 ```
@@ -37,8 +37,26 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 }
 ```
 
-## Tutorial
+## Usage and Tutorial
 
+In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
+
+# FMPES
+
+Using FMPES, the cartesian coordinates each atoms 
+
+```
+      A <---  0 ------- 1  --->   B
+```
+
+# EFEI
+
+In comparison to FMPES, the EFEI pulls along the internal molecular coordinates.
+Using this method, the pulling coordinate can be defined using only the ap
+
+```
+	     0 <-------> 1  
+```
 ## Function Requests
 
 For function request related to mechanochemistry simulations and force analysis tools please contact author.
