@@ -110,6 +110,17 @@ AppPoints  = [0,1]
 
 Using EFEI formalism, the pull force is divided equally to the two atoms given by the ap list.
 
+After parameterization of the LinearPull class, geometry optimization or molecular dynamics can be done.  
+In the case of optimization, an example is given below.
+
+```
+pull.set_calculator(EMT())
+dyn = BFGS(pull, trajectory='optimization.traj')
+dyn.run(fmax=0.05)
+```
+
+Molecular dynamics can be done similarly. Users are suggested to visit ASE documentations for descriptions of parameters needed for MD and optimizations.
+
 ### WallPot Class
 
 Similar to LinearPull class, the wallpot inherits from the atoms class.
@@ -123,6 +134,11 @@ The WallPot class takes the parameters method, plane, height, and wallforce.
 ```
 mol.set_params(method='linear', plane=atomplane , height=10, wallforce=force)
 ```
+Method defines the type of interacting potential with the wall.
+The plane is a list of len(3) which defines the equation of the plane.
+The imaginary plane can then be displaced along the z direction with height key.
+Similar to LinearPull class, the magnitude of force can be controlled by wallforce key.  
+
 ## Function Requests
 
 For function request related to mechanochemistry simulations and force analysis tools please contact author.
