@@ -41,14 +41,17 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 
 In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
 
-The mechanochem classes LinearPull and WallPot inherits from the ASE atoms object and hence an atoms instance is required.
-For an instance named as mol, this can easily be done as
+The mechanochem classes LinearPull and WallPot inherits from the ASE atoms object and hence an atoms instance is required.  
+For an instance named mol, this can easily be done as
 
 ```
 import mechanochem as mc
 
 pull = mc.LinearPull(mol)
 ```
+
+At this point, user should provide specific keyword arguments for the LinearPull object which would depend on the method key.
+As stated earlier the Mechanochem classes inherits from Atoms object and accepts similar parameters such as calculator, pbc, etc.
 
 ### FMPES
 
