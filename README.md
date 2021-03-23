@@ -39,6 +39,7 @@ or similary depending on your citation style. Alternatively, the BibTex library 
 
 ## Usage and Tutorial
 
+### LinearPull Class
 In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
 
 The mechanochem classes LinearPull and WallPot inherits from the ASE atoms object and hence an atoms instance is required.  
@@ -53,7 +54,7 @@ pull = mc.LinearPull(mol)
 At this point, user should provide specific keyword arguments for the LinearPull object which would depend on the method key.
 As stated earlier the Mechanochem classes inherits from Atoms object and accepts similar parameters such as calculator, pbc, etc.
 
-### FMPES
+#### FMPES
 
 Using FMPES, the required parameters are pulling points, applied points and applied forces 
 This can be done by the keywords pp, ap, and pullforce respectively.
@@ -90,7 +91,7 @@ That is first list in pp list is the direction where atom with index as the firs
 The magnitude of the applied force can be controlled using the pullforce key. 
 Note that the force provided should be in atomic units and the pullforce is divided in the two force vectors equally.
 
-### EFEI
+#### EFEI
 
 In comparison to FMPES, the EFEI pulls along the internal molecular coordinates.
 Using this method, the pulling coordinate can be defined using only the applied points and pullforce.
