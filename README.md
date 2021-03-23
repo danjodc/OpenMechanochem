@@ -16,7 +16,13 @@ Additionally, this module can also be used to add a **finite wall potential in s
 ## Usage and Citation
 
 ```
-@misc{Charles2013,
+De Chavez, Mechanochem, (2021), GitHub repository, https://github.com/danjodc/Mechnochem
+```
+
+Alternatively, the BibTex entry can be appended as
+
+```
+@misc{DeChavez2021,
   author = {De Chavez, Danjo.},
   title = {Mechanochem},
   year = {2021},
