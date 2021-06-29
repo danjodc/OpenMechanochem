@@ -1,7 +1,7 @@
-# Mechanochemistry
+# OpenMechanochem
 
 ## Introduction
-Mechanochemistry module includes functions that can be used to simulate mechanochemical phenomena via the addition of external forces.
+OpenMechanochemistry includes functions that can be used to simulate mechanochemical phenomena via the addition of external forces.
 This is designed to be used with the *Atomic Simulation Environment* (ASE). Together with ASE, this module can be combined with various quantum mechanical calculators for geometry optimizations and nudged elastic band calculations to sample the effect of mechanical forces to the potential energy hypersurface. Currently, this module can execute:
 
 * **Force Modified Potential Energy Surface** (FMPES) :<br/>
