@@ -116,10 +116,9 @@ class WallPotential(Atoms):
 	    Parameters:
 	    atoms: atoms object
 	    method: string of method
-	            * linear      : r Potential     
+	                * linear      : r Potential     
 		        * inverse     : 1 / r Potential
 		        * lj          : 12-6 potential
-		        * repulsivelj : 1 / r6 potential
        plane: [int1, int2, int3]
               Use to calculate a normal vector with respect to the plane
        height: float
@@ -166,8 +165,6 @@ class WallPotential(Atoms):
 			forces = self.get_linearforces(forces)
 		if self.method == 'inverse':
 			forces = self.get_inverseforces(forces)
-		if self.method == 'repulsivelj':
-			forces = self.get_repulsiveljforces(forces)
 		else:
 			forces = self.get_ljforces(forces)
 
@@ -212,20 +209,6 @@ class WallPotential(Atoms):
 			force_mag = 4 * ((-12/(distance**13))+(6/(distance**7)))
 			forces[item] = forces[item] - force_mag
 		return forces
-
-	def get_repulsiveljforces(self,forces):
-		normal = get_normalvector_plane(self.get_positions()[self.plane[0]],
-			                            self.get_positions()[self.plane[1]],
-			                            self.get_positions()[self.plane[2]])
-		for item in range(len(forces)):
-			distance = get_planepoint_distance(normal,
-				                               self.plane[0],
-			                                   self.get_positions()[item])
-			distance = distance + self.height
-			force_mag = self.wallforce / distance**7 * normal
-			forces[item] = forces[item] - force_mag
-		return forces
-
 
 def get_unitvector(atom1,atom2):
 	""" Returns a unit vector of V(1->2) """
