@@ -20,7 +20,7 @@ Additionally, this module can also be used to add a **finite wall potential in s
 
 Citation can be done as
 ```
-De Chavez, D., Mechanochem, (2021), GitHub repository, 
+De Chavez, D., OpenMechanochem, (2021), GitHub repository, 
 	https://github.com/danjodc/OpenMechanochem
 ```
 
@@ -33,7 +33,7 @@ or similarly depending on your citation style. For LaTex users, the BibTex libra
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/danjodc/mechanochem}},
+  howpublished = {\url{https://github.com/danjodc/OpenMechanochem}},
 }
 ```
 
@@ -46,7 +46,7 @@ The mechanochem classes LinearPull and WallPot inherit from the ASE atoms object
 For an instance named mol, this can easily be done as
 
 ```
-import mechanochem as mc
+import OpenMechanochem as mc
 
 pull = mc.LinearPull(mol)
 ```
