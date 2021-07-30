@@ -14,14 +14,14 @@ This is designed to be used with the *Atomic Simulation Environment* (ASE). Toge
  	Molecular Physics, 1098, 14 (2010)  
 <sub><sup>*Disclaimer: The author of this repository is not affiliated to the proponents of formalism above. Code development and testing was done independently*<sub><sup>	
 
-Additionally, this module can also be used to add a **finite wall potential in single direction**. Current implementations includes four different types of potential, (1) linear, (2) inverse, (3) lennard-jones, and (4) repulsivelj potentials.
+Additionally, this module can also be used to add a **finite wall potential in single direction**. Current implementations includes four different types of potential, (1) linear, (2) inverse, and (3) lennard-jones potential.
 
 ##  Citations
 
 Citation can be done as
 ```
 De Chavez, D., Mechanochem, (2021), GitHub repository, 
-	https://github.com/danjodc/Mechnochem
+	https://github.com/danjodc/OpenMechanochem
 ```
 
 or similarly depending on your citation style. For LaTex users, the BibTex library can be appended with
@@ -29,7 +29,7 @@ or similarly depending on your citation style. For LaTex users, the BibTex libra
 ```
 @misc{DeChavez2021,
   author = {De Chavez, Danjo.},
-  title = {Mechanochem},
+  title = {OpenMechanochem},
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
