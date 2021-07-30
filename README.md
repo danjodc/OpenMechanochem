@@ -122,7 +122,7 @@ dyn.run(fmax=0.05)
 
 Molecular dynamics can be done similarly. Users are suggested to visit ASE documentations for descriptions of parameters needed for MD and optimizations.
 
-### WallPot Class
+### WallPotential Class
 
 Similar to LinearPull class, the wallpot inherits from the atoms class.
 Hence, a prior instance of atoms should be provided.
@@ -130,7 +130,7 @@ Hence, a prior instance of atoms should be provided.
 ```
 mol = mc.WallPotential(slab)
 ```
-The WallPot class takes the parameters method, plane, height, and wallforce.
+The WallPotential class takes the parameters method, plane, height, and wallforce.
 
 ```
 mol.set_params(method='linear', plane=atomplane , height=10, wallforce=force)
