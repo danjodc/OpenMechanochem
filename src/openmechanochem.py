@@ -26,7 +26,7 @@ class LinearPull(Atoms):
 	         note: rotation and translation resulting to vector sum
 	            should be considered.
 	    force: float
-	           applied force in nanoNewtons
+	           applied force in au
 	"""
 	
 	def set_params(self,method,pp,ap,ego = None, pullforce = 0.0):
