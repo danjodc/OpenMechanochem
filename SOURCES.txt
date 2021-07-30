@@ -1,0 +1,9 @@
+OpenMechanochem.py
+README.md
+setup.py
+OpenMechanochem.egg-info/PKG-INFO
+OpenMechanochem.egg-info/SOURCES.txt
+OpenMechanochem.egg-info/dependency_links.txt
+OpenMechanochem.egg-info/entry_points.txt
+OpenMechanochem.egg-info/requires.txt
+OpenMechanochem.egg-info/top_level.txt
