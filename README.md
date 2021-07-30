@@ -66,7 +66,7 @@ In FMPES, the relative cartesian coordinates of pulling points and applied point
 For example, a system described below where H0 and H1 are hydrogen atoms pulled towards points A and B respectively, 
 
 ```
-      A <---  0 ------- 1  --->   B
+      A  <---  H0 ------- H1  --->  B
 ```
 
 with H2 xyz given as 
