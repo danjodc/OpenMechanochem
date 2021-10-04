@@ -206,7 +206,7 @@ class WallPotential(Atoms):
 			distance = get_planepoint_distance(normal,self.plane[0], 
 				                          self.get_positions()[item])
 			distance = distance + self.height
-			force_mag = 4 * ((-12/(distance**13))+(6/(distance**7)))
+			force_mag = k * ((-12/(distance**13))+(6/(distance**7)))
 			forces[item] = forces[item] - force_mag
 		return forces
 
