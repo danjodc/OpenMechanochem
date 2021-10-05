@@ -63,7 +63,7 @@ class LinearPull(Atoms):
 
 		if self.method == 'FMPES':
 			forces = self.get_FMPESforces(forces)
-		if self.method == 'EFEI':
+		elif self.method == 'EFEI':
 			forces = self.get_EFEIforces(forces)
 		else:
 			forces = self.get_EGOforces(forces)
