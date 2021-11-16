@@ -52,7 +52,7 @@ pip install OpenMechanochem==1.0.1
 ## Usage and Tutorial
 
 ### LinearPull Class
-In this tutorial, we w## Usage and Tutorialill use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
+In this tutorial, we will use FMPES and EFEI formalism to pull hydrogen molecule along the bond coordinate.
 
 The mechanochem classes LinearPull and WallPot inherit from the ASE atoms object and hence an Atoms instance is required.  
 For an instance named mol, this can easily be done as
